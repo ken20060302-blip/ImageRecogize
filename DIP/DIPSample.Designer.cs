@@ -245,6 +245,7 @@
             this.直圖圖轉換與直圖等化ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.直圖圖轉換與直圖等化ToolStripMenuItem.Text = "濾波器";
             // 
+            
             // oFileDlg
             // 
             this.oFileDlg.FileName = "openFileDialog1";
@@ -289,6 +290,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem 直圖圖轉換與直圖等化ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 直圖圖轉換與直圖等化ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 負片ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 亮度ToolStripMenuItem;
