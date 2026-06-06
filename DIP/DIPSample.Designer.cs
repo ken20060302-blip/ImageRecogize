@@ -47,12 +47,23 @@
             this.負片ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.亮度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.對比ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ostu分割ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gggToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.直ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.等話ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.顯示ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.等化ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.直圖圖轉換與直圖等化ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.平均ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.中值ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.高斯ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.銳化ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.拉普拉斯銳化ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.prewittToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.線偵測ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.線偵測ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.oFileDlg = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.旋轉ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -82,7 +93,8 @@
             this.fileToolStripMenuItem,
             this.iPToolStripMenuItem,
             this.gggToolStripMenuItem,
-            this.直圖圖轉換與直圖等化ToolStripMenuItem});
+            this.直圖圖轉換與直圖等化ToolStripMenuItem,
+            this.線偵測ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -112,7 +124,9 @@
             this.fffToolStripMenuItem,
             this.負片ToolStripMenuItem,
             this.亮度ToolStripMenuItem,
-            this.對比ToolStripMenuItem});
+            this.對比ToolStripMenuItem,
+            this.旋轉ToolStripMenuItem,
+            this.ostu分割ToolStripMenuItem});
             this.iPToolStripMenuItem.Name = "iPToolStripMenuItem";
             this.iPToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.iPToolStripMenuItem.Text = "基本";
@@ -120,7 +134,7 @@
             // rGBtoGrayToolStripMenuItem
             // 
             this.rGBtoGrayToolStripMenuItem.Name = "rGBtoGrayToolStripMenuItem";
-            this.rGBtoGrayToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.rGBtoGrayToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.rGBtoGrayToolStripMenuItem.Text = "RGBtoGray";
             this.rGBtoGrayToolStripMenuItem.Click += new System.EventHandler(this.RGBtoGrayToolStripMenuItem_Click);
             // 
@@ -136,7 +150,7 @@
             this.toolStripMenuItem8,
             this.toolStripMenuItem9});
             this.fffToolStripMenuItem.Name = "fffToolStripMenuItem";
-            this.fffToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.fffToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fffToolStripMenuItem.Text = "Bit Section";
             // 
             // toolStripMenuItem2
@@ -198,57 +212,142 @@
             // 負片ToolStripMenuItem
             // 
             this.負片ToolStripMenuItem.Name = "負片ToolStripMenuItem";
-            this.負片ToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.負片ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.負片ToolStripMenuItem.Text = "負片";
             this.負片ToolStripMenuItem.Click += new System.EventHandler(this.負片ToolStripMenuItem_Click);
             // 
             // 亮度ToolStripMenuItem
             // 
             this.亮度ToolStripMenuItem.Name = "亮度ToolStripMenuItem";
-            this.亮度ToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.亮度ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.亮度ToolStripMenuItem.Text = "亮度";
             this.亮度ToolStripMenuItem.Click += new System.EventHandler(this.亮度ToolStripMenuItem_Click);
             // 
             // 對比ToolStripMenuItem
             // 
             this.對比ToolStripMenuItem.Name = "對比ToolStripMenuItem";
-            this.對比ToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.對比ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.對比ToolStripMenuItem.Text = "對比";
-            this.對比ToolStripMenuItem.Click += new System.EventHandler(this.對比ToolStripMenuItem_Click);
+            this.對比ToolStripMenuItem.Click += new System.EventHandler(this.對比ToolStripMenuItem_Click_1);
+            // 
+            // ostu分割ToolStripMenuItem
+            // 
+            this.ostu分割ToolStripMenuItem.Name = "ostu分割ToolStripMenuItem";
+            this.ostu分割ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ostu分割ToolStripMenuItem.Text = "ostu分割";
+            this.ostu分割ToolStripMenuItem.Click += new System.EventHandler(this.ostu分割ToolStripMenuItem_Click);
             // 
             // gggToolStripMenuItem
             // 
             this.gggToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.直ToolStripMenuItem,
-            this.等話ToolStripMenuItem});
+            this.顯示ToolStripMenuItem,
+            this.等化ToolStripMenuItem});
             this.gggToolStripMenuItem.Name = "gggToolStripMenuItem";
             this.gggToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.gggToolStripMenuItem.Text = "直方圖";
             // 
-            // 直ToolStripMenuItem
+            // 顯示ToolStripMenuItem
             // 
-            this.直ToolStripMenuItem.Name = "直ToolStripMenuItem";
-            this.直ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.直ToolStripMenuItem.Text = "顯示";
-            this.直ToolStripMenuItem.Click += new System.EventHandler(this.直ToolStripMenuItem_Click);
+            this.顯示ToolStripMenuItem.Name = "顯示ToolStripMenuItem";
+            this.顯示ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.顯示ToolStripMenuItem.Text = "顯示";
+            this.顯示ToolStripMenuItem.Click += new System.EventHandler(this.顯示ToolStripMenuItem_Click);
             // 
-            // 等話ToolStripMenuItem
+            // 等化ToolStripMenuItem
             // 
-            this.等話ToolStripMenuItem.Name = "等話ToolStripMenuItem";
-            this.等話ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.等話ToolStripMenuItem.Text = "等化";
-            this.等話ToolStripMenuItem.Click += new System.EventHandler(this.等話ToolStripMenuItem_Click);
+            this.等化ToolStripMenuItem.Name = "等化ToolStripMenuItem";
+            this.等化ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.等化ToolStripMenuItem.Text = "等化";
+            this.等化ToolStripMenuItem.Click += new System.EventHandler(this.等化ToolStripMenuItem_Click_1);
             // 
             // 直圖圖轉換與直圖等化ToolStripMenuItem
             // 
+            this.直圖圖轉換與直圖等化ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.平均ToolStripMenuItem,
+            this.中值ToolStripMenuItem,
+            this.高斯ToolStripMenuItem,
+            this.銳化ToolStripMenuItem,
+            this.拉普拉斯銳化ToolStripMenuItem,
+            this.prewittToolStripMenuItem,
+            this.sobelToolStripMenuItem});
             this.直圖圖轉換與直圖等化ToolStripMenuItem.Name = "直圖圖轉換與直圖等化ToolStripMenuItem";
             this.直圖圖轉換與直圖等化ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.直圖圖轉換與直圖等化ToolStripMenuItem.Text = "濾波器";
             // 
-            
+            // 平均ToolStripMenuItem
+            // 
+            this.平均ToolStripMenuItem.Name = "平均ToolStripMenuItem";
+            this.平均ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.平均ToolStripMenuItem.Text = "平均";
+            this.平均ToolStripMenuItem.Click += new System.EventHandler(this.平均ToolStripMenuItem_Click);
+            // 
+            // 中值ToolStripMenuItem
+            // 
+            this.中值ToolStripMenuItem.Name = "中值ToolStripMenuItem";
+            this.中值ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.中值ToolStripMenuItem.Text = "中值";
+            this.中值ToolStripMenuItem.Click += new System.EventHandler(this.中值ToolStripMenuItem_Click);
+            // 
+            // 高斯ToolStripMenuItem
+            // 
+            this.高斯ToolStripMenuItem.Name = "高斯ToolStripMenuItem";
+            this.高斯ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.高斯ToolStripMenuItem.Text = "高斯";
+            this.高斯ToolStripMenuItem.Click += new System.EventHandler(this.高斯ToolStripMenuItem_Click);
+            // 
+            // 銳化ToolStripMenuItem
+            // 
+            this.銳化ToolStripMenuItem.Name = "銳化ToolStripMenuItem";
+            this.銳化ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.銳化ToolStripMenuItem.Text = "銳化";
+            this.銳化ToolStripMenuItem.Click += new System.EventHandler(this.銳化ToolStripMenuItem_Click);
+            // 
+            // 拉普拉斯銳化ToolStripMenuItem
+            // 
+            this.拉普拉斯銳化ToolStripMenuItem.Name = "拉普拉斯銳化ToolStripMenuItem";
+            this.拉普拉斯銳化ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.拉普拉斯銳化ToolStripMenuItem.Text = "拉普拉斯銳化";
+            this.拉普拉斯銳化ToolStripMenuItem.Click += new System.EventHandler(this.拉普拉斯銳化ToolStripMenuItem_Click);
+            // 
+            // prewittToolStripMenuItem
+            // 
+            this.prewittToolStripMenuItem.Name = "prewittToolStripMenuItem";
+            this.prewittToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.prewittToolStripMenuItem.Text = "Prewitt";
+            this.prewittToolStripMenuItem.Click += new System.EventHandler(this.prewittToolStripMenuItem_Click);
+            // 
+            // sobelToolStripMenuItem
+            // 
+            this.sobelToolStripMenuItem.Name = "sobelToolStripMenuItem";
+            this.sobelToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sobelToolStripMenuItem.Text = "Sobel";
+            this.sobelToolStripMenuItem.Click += new System.EventHandler(this.sobelToolStripMenuItem_Click);
+            // 
+            // 線偵測ToolStripMenuItem
+            // 
+            this.線偵測ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.線偵測ToolStripMenuItem1});
+            this.線偵測ToolStripMenuItem.Name = "線偵測ToolStripMenuItem";
+            this.線偵測ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.線偵測ToolStripMenuItem.Text = "線偵測";
+            // 
+            // 線偵測ToolStripMenuItem1
+            // 
+            this.線偵測ToolStripMenuItem1.Name = "線偵測ToolStripMenuItem1";
+            this.線偵測ToolStripMenuItem1.Size = new System.Drawing.Size(137, 26);
+            this.線偵測ToolStripMenuItem1.Text = "線偵測";
+            this.線偵測ToolStripMenuItem1.Click += new System.EventHandler(this.線偵測ToolStripMenuItem1_Click);
+            // 
             // oFileDlg
             // 
             this.oFileDlg.FileName = "openFileDialog1";
+            // 
+            // 旋轉ToolStripMenuItem
+            // 
+            this.旋轉ToolStripMenuItem.Name = "旋轉ToolStripMenuItem";
+            this.旋轉ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.旋轉ToolStripMenuItem.Text = "旋轉";
+            this.旋轉ToolStripMenuItem.Click += new System.EventHandler(this.旋轉ToolStripMenuItem_Click);
             // 
             // DIPSample
             // 
@@ -290,13 +389,27 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
-        private System.Windows.Forms.ToolStripMenuItem 直圖圖轉換與直圖等化ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 直圖圖轉換與直圖等化ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 負片ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 亮度ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 對比ToolStripMenuItem;
         public System.Windows.Forms.ToolStripStatusLabel stStripLabel;
-        private System.Windows.Forms.ToolStripMenuItem 直ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 等話ToolStripMenuItem;
+
+        // 修正後的直方圖選單變數
+        private System.Windows.Forms.ToolStripMenuItem 顯示ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 等化ToolStripMenuItem;
+
+        // 刪除重複的分身，只保留一個濾波器選單變數
+        private System.Windows.Forms.ToolStripMenuItem 直圖圖轉換與直圖等化ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 平均ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 中值ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 高斯ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 線偵測ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 銳化ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 拉普拉斯銳化ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem prewittToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sobelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 線偵測ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ostu分割ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 旋轉ToolStripMenuItem;
     }
 }
